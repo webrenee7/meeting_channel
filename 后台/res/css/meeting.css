@@ -1,0 +1,470 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body { width:100%; height:100%; background-color:#fff; font-size:13px; font-family:微软雅黑; color:#000; line-height:23px;}
+*{ margin:0; padding:0;}
+img{ border:medium none;}
+ul, ol, li {list-style:none outside; *list-style-position:outside; overflow:visible;}
+input:focus {outline:none;}
+a{ color:#0000ff; text-decoration:none; }
+.left{ float:left;}
+.right{ float:right;}
+.break{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.te_r{ text-align:right;}
+.te_l{ text-align:left;}
+.bold{ font-weight:bold;}
+.gray{ color:#999;}
+.red { color: #ff0000;}
+.orange{ color:#ff6600;}
+.orange2{ color:#f58502;}
+textarea{ overflow-y:scroll;}
+h1,h2,h3,h4,h5,h6{ font-size:100%;}
+.clearfix { height:1%; display: block;}
+.clearfix:after { clear: both; content: "."; display: block; font-size: 0; height: 0; visibility: hidden;}
+.btn{ background:none; font-size:14px; color:#fff; border:medium none; cursor:pointer;*overflow:visible;}
+.center{ text-align:center;}
+.font_24{ font-size:24px; line-height:34px;}
+textarea{ font:14px/24px "微软雅黑";}
+select{ font-size:14px; font-family: "微软雅黑";}
+.mat_10{ margin-top:10px;}
+.mal_15{ margin-left:15px;}
+.mal_30{ margin-left:30px;}
+.mal_25{ margin-left:25px;}
+.mal_10{ margin-left:10px;}
+.mat_20{ margin-top:20px;}
+.mal_40{ margin-left:40px;}
+.mal_20{ margin-left:20px;}
+.mal_106{ margin-left:106px;}
+.mal_6{ margin-left:6px;}
+.mal_60{ margin-left:60px;}
+.mal_84{ margin-left:84px;} 
+.mat_259{ margin-top:259px;}
+.mab_5{ margin-bottom:5px;}
+.mat_35{ margin-top:35px;}
+
+
+/*分页样式*/
+.flip { width:95%; margin:20px auto 20px; text-align:center;}
+.flip_list{ display:inline-block; margin:0 auto; padding:0; font-family:Arial, Helvetica, sans-serif;}
+.flip_list span.flip_total { float:right; font-size:14px; color:#3E3E3E; padding-right:30px;}
+.flip_list ul {	float:right;}
+.flip_list ul li { float:left; margin:0 3px 0 0px; padding:0px;	font-weight:bold;}
+.flip_list ul li a, .flip_list ul li .current { padding:0px 6px; border:1px solid #00647a; display:block; color:#00647a; margin:0px;}
+.flip_list ul li span.disable {	padding:0 6px; display:block; color:#fff; margin:0px; font-weight:bold;	font-size:12px;	border:1px solid #909090; color:#909090; line-height:18px;}
+.flip_list ul li a:hover, .flip_list ul li a:active, .flip_list ul li .current { background:#e5eff1; color:#00647a; text-decoration:none;}
+.flip_list { line-height:18px;}
+
+
+/*头部*/
+.head{ width:100%; height:70px; background:#338395;}
+.head_body{ width:1000px; margin:0 auto;}
+.logo{ float:left; width:293px; height:70px;}
+.login_info{ width:160px; line-height:70px; float:right;}
+.login_info a{ color:#ff9900; font-size:14px;}
+.login_info .quit{ color:#fff; margin-left:25px;}
+
+
+/*尾部*/
+.footer{ background-color:#f6f4f4;}
+.footer_body{ width:1000px; height:90px; margin:0 auto; text-align:center; font-size:12px; color:#999;}
+.footer_body ul{ height:23px; display:inline-block; *zoom:1; *display:inline; color:#ccc; padding:17px 0 10px;}
+.footer_body ul li{ float:left; }
+.footer_body ul li a{ color:#666; margin:0 10px;}
+
+
+/*参会住宿*/
+.page_top_img{ width:1000px; height:auto; margin:0 auto; position:relative;}
+.page_top_img img{ width:1000px; height:auto;}
+.top_img_tip{ width:215px; height:25px; line-height:18px; position:absolute; bottom:5px; right:0; text-align:right;}
+.top_img_tip a{ float:left;}
+.top_img_tip input{ float:right;}
+.page_top{ width:1000px; margin:0 auto; padding:55px 0 5px; border-bottom:2px solid #cdd3df;}
+.content_info{ width:785px; float:left; }
+.content_title{ text-align:center; font-size:28px; line-height:38px; color:#5a5a5a;}
+.content_from{ font-size:16px; line-height:22px; color:#5b5b5b; padding-left:45px; margin-top:30px;}
+.content_from span{ margin-left:65px;}
+.date_icon{ background:url(../images/meeting/date_icon.png) no-repeat scroll; padding-left:20px; display:inline-block;}
+.span_date{ background-position:0 4px;}
+.span_point{ background-position:0 -18px;}
+.span_place{ background-position:0 -41px;}
+.content_edit{ width:105px; float:left; padding-top:67px;line-height:18px;}
+.content_tip{ width:110px; float:right;}
+.zh_eh{ font-size:12px; line-height:22px; padding-top:13px; margin-bottom:30px;}
+.zh_eh a{ color:#338395; }
+.coll_btn{ width:110px; height:25px; background:url(../images/meeting/coll_bg.png) no-repeat;}
+.page_body{ width:1000px; margin:0 auto;/* padding-top:30px;*/}
+.slide_box{ width:224px; float:left; border-right:1px solid #cdd3df; padding-top:15px; padding-bottom:50px;}
+.slide_nav ul li{ padding:0 33px 0 25px; line-height:40px; font-size:15px; }
+.slide_nav ul li a{ display:block; *height:38px;border-bottom:1px dashed #b3bbd1; background:url(../images/meeting/right_arrow.png) no-repeat right center; padding-right:15px; color:#444;}
+.slide_nav ul li a.down_arrow{ background:url(../images/meeting/down_arrow.png) no-repeat right center;}
+.slide_nav ul li .border_top{border-top:1px dashed #b3bbd1;}
+.slide_nav ul li.hover{ background:url(../images/meeting/li_borderl.jpg) no-repeat left center #f1f3f6;}
+.slide_nav ul li .special_info{ padding:15px 0;}
+.slide_nav ul li .special_info li{ padding:0 0 0 30px; line-height:25px; font-size:12px; color:#6e6d6d;}
+.slide_nav ul li .special_info li a{ *height:25px; border:none; background:none; color:#0000ff;}
+.slide_nav ul li .special_info li.hover{ background:none; border-left:none;}
+.slide_contact{ border-top:1px solid #dde0e5;}
+.slide_contact_title{ font-size:17px; line-height:27px; margin-top:15px;}
+.slide_contact_one{ border-bottom:1px dashed #c0c8de; padding:12px 0; margin:0 20px; font-size:12px; line-height:18px; word-break:break-all;}
+.slide_contact_one h4{ font-size:13px;}
+.page_content{ width:720px; float:right; padding-left:10px;}
+.page_content_title{font-size:12px; line-height:26px; color:#010101; padding:10px 0 10px; margin-left:-10px;}
+.page_content_title .title{font-size:16px; background:url(../images/meeting/line_3.jpg) no-repeat left center; padding-left:10px; font-weight:bold;}
+.page_content_title a{ font-size:14px;}
+.page_content_body{ font-size:14px; line-height:24px;}
+.down_txt{ margin-top:20px;}
+
+
+/*参会住宿-设置-住宿选项*/
+.main_top{ width:1000px; margin:0 auto; padding:75px 0 15px; border-bottom:1px solid #8cb9c3;}
+.main_top .left_title{ float:left; margin-top:10px; font-size:15px; line-height:25px; font-weight:bold;}
+.main_top .center_title{ float:left; width:760px; text-align:center; font-size:25px; line-height:35px;}
+.main_top .right_btn{ float:right; margin-top:10px;}
+.orange_btn_short,.blue_btn_short{ font-size:14px; color:#fff; height:25px; padding:0 20px; }
+.orange_btn_tall,.blue_btn_tall{font-size:16px; color:#fff; height:35px; padding:0 35px; }
+.orange_btn_short,.orange_btn_tall{background:#ff8807; }
+.blue_btn_short,.blue_btn_tall{ background:#4c92a2;}
+.main_body{ width:1000px; margin:0 auto; padding-bottom:20px;}
+.main_body_title{ margin-top:30px;font-size:24px; line-height:34px;}
+.main_body_content{ margin-top:10px; font-size:14px; line-height:24px;}
+
+
+/*大会征文*/
+.essay{ color:#565656; font-size:12px; line-height:22px; margin-bottom:70px;}
+.essay p a{ text-decoration:underline;}
+.blue_gradient_btn,.grey_gradient_btn{ padding:0 25px; height:28px;  font-size:13px; color:#010101;}
+.blue_gradient_btn{background:#8cb9c3; color:#fff;}
+.grey_gradient_btn{ background:#eee;}
+
+
+/*大会征文-设置-投稿分类*/
+.text_type{ width:100%; text-align:center;}
+.text_type th,.text_type td{ line-height:40px; border-bottom:1px solid #e3e8f1;}
+.text_type th{ font-weight:normal;}
+
+
+/*弹框*/
+.shadow{ width:100%; height:100%;opacity:0.75; filter:alpha(opacity=75); background:#000; position:fixed; top:0; left:0;_position:absolute; _top:expression(offsetParent.scrollTop); z-index:999999;}
+.pop_box{ width:350px; position:absolute; top:50%; left:50%; background:#fff; margin-left:-175px; font-size:14px; z-index:9999999;border:1px solid #e3e8f1;}
+.pop_title{ height:40px; line-height:40px; border-bottom:1px solid #e3e8f1; text-align:center; font-size:18px;}
+.pop_close{ width:25px; height:25px; position:absolute; right:-10px; top:-10px; z-index:1;}
+.pop_close_btn{width:25px; height:25px; background:url(../images/meeting/close.png) no-repeat;}
+.pop_body{ width:295px; margin:30px auto 0;}
+.pop_input{ margin-bottom:20px; line-height:24px;}
+.pop_input label{ float:left; width:84px; text-align:right;}
+.pop_input .text,.pop_input select{float:left;margin-left:10px;border:1px solid #e3e8f1; _display:inline;}
+.input_text{ height:18px; line-height:18px; padding: 3px 5px 1px; vertical-align: middle;}
+.select{height: 24px; line-height: normal; margin-right: 0; padding: 0;}
+.pop_input .text{ width:188px;}
+.pop_input select{ width:200px;}
+.pop_submit{ width:180px; margin:0 auto 30px;}
+
+
+/*大会征文-在线投稿*/
+.online_text_input{ padding-top:45px; font-size:14px;}
+.text_input_one{ margin-top:15px; line-height:24px; color:#565656;}
+.text_input_one label{ width:75px; float:left; text-align:right; margin-right:10px;}
+.text_input_one .text,.text_input_one textarea,.text_input_one select{float:left; border:1px solid #8a8a8a;font-size:14px; color:#565656;}
+.text_input_one .long_text,.text_input_one textarea{ width:615px;}
+.text_input_one .short_text{ width:250px;}
+.text_input_one select{ width:263px;}
+.text_input_one textarea{ height:135px; padding:0 5px;line-height:24px; resize:none; }
+.text_input_one textarea.hei_104{ height:104px;}
+.hei_24{ height:24px;_line-height:24px;}
+.mat_5{ _margin-top:5px;}
+.online_text_submit{ margin-top:30px; margin-left:85px;}
+.file_input{ height:28px; background:#fff; line-height:28px;}
+
+
+/*个人报名*/
+.last_date{ font-size:16px; line-height:26px; padding:20px 0;border-bottom:1px solid #91a3c7;}
+.sign_box{ border-bottom:1px solid #91a3c7; padding:20px 0;}
+.left_radius,.right_radius{ width:8px; height:42px; float:left;}
+.left_radius{ background:url(../images/meeting/left_radius.jpg) no-repeat;}
+.right_radius{ background:url(../images/meeting/right_radius.jpg) no-repeat;}
+.sign_btn{ padding:0 20px; height:42px;_height:41px; background:#ff8807; font-size:20px; color:#fff; font-weight:bold;}
+.sign_title{ font-size:18px; line-height:28px; margin:20px 6px;}
+
+
+/*个人报名-报名人员详情*/
+.user_info{ margin-left:40px; padding:20px 0 35px; font-size:14px;}
+.user_info p{ padding:10px 0;}
+.user_save,.user_cancel{ width:180px; height:40px; font-size:18px; color:#fff;}
+.user_save{ background:#ff8500;}
+.user_cancel{ background:#4c92a2;}
+
+
+/*个人报名-设置-报名人员统计*/
+.sign_user{ margin-left:25px; font-size:13px; color:#1c1c1c;}
+.sign_user_input{ margin-bottom:20px; line-height:24px;}
+.sign_user_input label{ width:70px; float:left;}
+.sign_user_input select{ width:133px; margin-left:10px; float:left; border:1px solid #9a9a9a;}
+.sign_user_input .text{ width:210px;float:left; border:1px solid #9a9a9a; margin-right:10px;}
+.user_search{ width:90px; height:24px; color:#fff; font-size:12px; background:#4c92a2;}
+.sign_user_table{ width:100%; text-align:center; border-collapse:collapse;}
+.sign_user_table th,.sign_user_table td{ border:1px solid #8a8a8a;}
+.sign_user_table th{ line-height:40px; background:#e5eaee;}
+.sign_user_table td{ font-size:12px; line-height:22px; padding:15px 0;}
+
+
+/*个人报名-填写表单*/
+.sign_info{ margin-top:50px;}
+.sign_info_one{ margin-bottom:15px; line-height:24px;}
+.sign_info_one span{ float:left;}
+.red_star{color:#ff3600; width:6px; margin-right:10px; }
+.sign_info_one label{ width:85px; float:left; text-align:right; margin-right:10px;}
+.sign_info_one .short_text,.sign_info_one long_text,.sign_info_one select,.sign_info_one textarea{ border:1px solid #8a8a8a; float:left;}
+.sign_info_one .short_text{ width:170px;}
+.sign_info_one select{ width:183px;}
+.sign_info_one .short_select{ width:132px; margin-right:10px;}
+.check_num_btn{ padding:0 20px; height:24px; background:#f1f3f6; color:#000;}
+.checkbox_ul{ float:left;}
+.checkbox_ul li{ float:left; margin-right:15px;}
+.checkbox_ul li input{ margin-right:3px; vertical-align:middle; margin-bottom:3px;*margin-bottom:0;}
+.sign_info_one textarea{ width:430px; height:95px; padding:0 5px; resize:none;}
+
+
+/*会场花絮*/
+.meet_img{ padding-top:30px;}
+.meet_img_ship{ float:left; margin-left:20px; margin-top:20px; padding:10px; border:1px solid #f6f6f6;}
+.meet_img_ship a{ display:block;}
+.meet_img_ship,.meet_img_ship a,.meet_img_ship a img{ width:195px; height:120px;}
+
+
+/*点击看大图弹框*/
+.img_pop{ width:1000px; padding-top:40px; position:absolute; top:50%; left:50%; margin-left:-500px; z-index:9999999;}
+.img_last,.img_next{ width:100px; height:100px; position:absolute; top:50%; margin-top:-10px; font-size:100px; text-align:center; line-height:100px;}
+.img_last a,.img_next a{ color:#fff;}
+.img_last{ left:0;}
+.img_next{ right:0;}
+.img_body{margin-left:150px; overflow:hidden;}
+.img_body,.one_img,.one_img img{ width:700px; height:437px;}
+.one_img{ position:relative;}
+.one_img_info{ width:100%; height:23px; padding:5px 0; text-align:center; background:#47659e;opacity:0.7; filter:alpha(opacity=70); position:absolute; left:0; bottom:0;}
+.one_img_info a{ color:#fff;}
+
+
+/*会场花絮-设置-会场花絮*/
+.up_img{ margin:40px 0 40px 25px;}
+.up_img img{ width:200px; height:143px; display:block; border:1px solid #9e9e9e;}
+.file-box{ position:relative; margin-top:12px;}
+.file-box.mat_0{ margin-top:0;}
+.txt{ height:23px; border:1px solid #777; width:190px; padding:0 5px;}
+.file{ position:absolute; top:0; left:0; height:24px; filter:alpha(opacity:0);opacity: 0;filter:alpha(opacity=0);width:280px; cursor:pointer;}
+.file_long{ width:308px; height:28px;}
+.up_imgTable{ margin-left:25px;}
+.up_img_table{ width:100%; text-align:center;}
+.up_img_table th{ height:39px; line-height:40px; background:#f2f4f8;font-weight:normal;}
+.up_img_table td{ padding-top:20px;}
+.up_img_table td span{ display:block; padding:10px; border:1px solid #f5f5f5;}
+.up_img_table td span,.up_img_table td span img{ width:195px; height:120px;}
+
+
+/*会议日程*/
+.one_meet{ margin-top:20px;}
+.meet_time p{ padding-bottom:10px;}
+.meet_info{ width:620px; margin:0 auto; border:1px solid #bababa; padding:5px 10px;}
+
+
+/*会议日程-设置-日程管理*/
+.date_set_input{ margin-bottom:20px; line-height:24px;}
+.star_color{ color:#ff3600;}
+.date_set_input label{ width:70px; float:left; text-align:right;}
+.date_set_input .short_text,.date_set_input .long_text,.date_set_input textarea{ border:1px solid #636363; float:left; margin:0 10px;}
+.date_set_input .short_text{ width:155px;}
+.date_set_input .long_text{ width:245px;}
+.date_set_input textarea{ width:650px; height:285px; padding:0 5px; resize:none;}
+
+
+/*会议首页*/
+.sponsor{ width:1000px; margin:30px auto 0; border-top:2px solid #cdd3df;}
+.sponsor_title{ font-size:12px; line-height:22px; padding:15px 0;}
+.sponsor_title a{ color:#000; margin-left:15px;}
+.sponsor_ship{ /*width:226px; height:76px;*/ margin:0 0 12px 30px; float:left; overflow:hidden;width:224px; height:74px;}
+.sponsor_ship.mal_0{ margin-left:0;}
+.sponsor_ship a{ display:block; /*border:1px solid #c7d1e4;*/}
+.sponsor_ship a,.sponsor_ship a img{max-width:224px; height:74px; /*margin:0 auto;*/}
+
+
+/*设置--导航*/
+.nav_path{ color:#515151; margin:20px 0 40px;}
+.nav_set_table{ width:100%; border-collapse:collapse; text-align:center;}
+.nav_set_table th,.nav_set_table td{ border:1px solid #a9b8d5; line-height:34px;}
+
+
+/*编辑弹框*/
+.add_admin_btn{ width:142px; height:29px; background:url(../images/meeting/add_admin.jpg) no-repeat;}
+.add_adminTable{ margin-top:30px;}
+.add_admin_table{ width:630px; text-align:center;}
+.add_admin_table th{ background:#f0f4fd; line-height:30px; font-weight:normal;}
+.add_admin_table td{ padding:15px 0; border-bottom:1px solid #f0f4fd;}
+
+
+/*设置-联系方式*/
+.contact{ color:#435b90;}
+.contact_body{ border-bottom:1px dashed #cfd7e7; padding-bottom:30px; margin-bottom:30px;}
+.contact_ship{ width:285px; float:left; margin-left:40px; margin-top:15px;_display:inline;}
+.contact_ship .text{ border:1px solid #cfd7e7; width:225px;}
+
+
+/*文献集-稿件详细页*/
+.text_ship{ margin-bottom:30px;}
+.text_ship label{ width:84px; float:left;}
+.text_ship p{ width:636px; float:left;}
+.wid_105{ width:105px; padding:0;}
+
+
+/*文章单页-设置-编辑文章*/
+.edit_text{ margin-top:45px;}
+.edit_text_input{ margin-bottom:20px; padding-left:25px;}
+.edit_text_input label{ width:70px; float:left; }
+.edit_text_input .text,.edit_text_input textarea{ border:1px solid #8a8a8a; float:left;}
+.edit_text_input .text{ width:655px; height:24px; line-height:24px; padding:0 5px; font-size:14px;}
+.thumb{ float:left;}
+.thumb img{ width:200px; height:130px; border:1px solid #9e9e9e; display:block;}
+.edit_text_input  textarea{padding:0 5px; resize:none;}
+.edit_text_input .short_textarea{ width:655px; height:70px;}
+.edit_text_input .long_textarea{ width:725px; height:325px;}
+
+
+/*文章列表页*/
+.article_ship{ margin-top:30px;}
+.article_img{ float:right; margin-left:10px;}
+.article_img a{ display:block;}
+.article_img,.article_img a,.article_img a img{ width:183px; height:122px;}
+.article_title{ margin-bottom:15px;}
+.article_title_l{ width:640px;  float:left; white-space:nowrap; overflow:hidden;}
+.article_title_l a{ color:#000;font-weight:bold;}
+.article_title_r{ width:80px; float:right; text-align:right;}
+.article_intro{ font-size:13px; line-height:21px; color:#3b3b3b;}
+.article_intro_txt{ overflow:hidden;zoom:1;}
+.intro_p{ height:63px; overflow:hidden;}
+.blue_a{ color:#338395;}
+
+
+/*文献集*/
+.document_tab{ border-bottom:1px solid #98a9cb;}
+.document_tab a{ width:105px; height:34px; line-height:34px; font-size:15px; text-align:center; margin-left:8px; float:left; border:1px solid #98a9cb;background:#e6edf2; margin-bottom:-1px; color:#000;}
+.document_tab a.current{ background:#fff; border-bottom:1px solid #fff;}
+.document_body{ margin-top:32px;}
+.document_title{ font-size:16px; color:#338395; font-weight:bold; line-height:26px; padding:13px; border-bottom:1px dashed #b3bbd1;}
+.document_list{ padding-bottom:20px;}
+.document_ship{ border-bottom:1px dashed #b3bbd1; padding:15px 40px 0 30px;}
+.document_ship .txt_title{ width:500px; float:left;}
+.document_ship .txt_date{ width:100px; float:right; text-align:right;}
+.document_ship_title{ font-weight:bold; margin-bottom:15px;}
+.document_ship_body{ margin-left:22px;}
+.document_ship_body ul li{ margin-bottom:15px;}
+
+
+/*设置-赞助单位-合作媒体*/
+.company_set_table{ width:100%; text-align:center;}
+.company_set_table th{ font-weight:normal; border-collapse:collapse;}
+.company_set_table th,.company_set_table td{ border-bottom:1px dashed #e9e9e9; padding:27px 0;}
+.company_set_table td img{ width:77px; height:51px; margin:0 auto;}
+
+/*设置-会议基本信息*/
+.one_search{ height:30px; color:#435b90; margin-bottom:15px;}
+.one_search label{ width:80px; line-height:30px; float:left; text-align:right; padding-right:7px;}
+.one_search label span{ color:#ff3600; margin-right:8px;}
+.one_search label span.mar_r26{ margin-right:26px;}
+.one_search input, .one_search select{ border:1px solid #a0afce; height:28px; color:#435b90; line-height:28px; padding:0 5px; float:left;}
+.time_input{ width:92px;}
+.time_line{ width:28px; height:0; overflow:hidden; border-bottom:1px solid #a0afce; float:left; margin:15px 5px 0 5px;}
+.one_search .select1{ width:131px; *height:22px; *line-height:22px; *margin-top:5px; margin-right:11px; padding:1px 1px 1px 5px;}
+.publish_body{ width:820px; margin:0 auto; margin-top:50px; padding-bottom:60px; font-size:13px;}
+.long_input{ width:402px;}
+.check{ color:#0000ff; margin-left:10px; float:left; line-height:30px; vertical-align:middle;}
+.credit_character{ width:730px; float:left; padding-top:3px;}
+.credit_character li{ float:left; margin-right:10px;}
+.credit_character input{ width:20px; height:18px; line-height:18px; float:none; vertical-align:middle;}
+.credit_character .check_box{ width:auto; height:auto; border:none;}
+.credit_character li span{ padding:0 2px; vertical-align:middle;}
+.class_list{ padding-left:87px; margin-bottom:12px;}
+.class_list li{ background:#e5eff1; height:25px; float:left; margin-right:10px; padding-left:10px;}
+.delete{ display:inline-block; width:25px; text-align:center; margin-left:10px; color:#8cb9c3;}
+.more_info{ padding-left:14px;}
+.more_info p{ color:#435b90; margin-bottom:10px;}
+.more_info textarea{ width:786px; height:230px; border:1px solid #a0afce; padding:3px 10px; resize:none; font-size:13px; font-family:"Microsoft Yahei"; color:#435b90; overflow-y:auto; margin-bottom:15px;}
+.add_adjunct{ height:26px; position:relative; color:#435b90; padding-left:14px; margin-bottom:30px;}
+.add_adjunct input{ margin-left:15px;}
+.i_text{ width:160px; height:24px; line-height:24px; border:1px solid #a0afce; color:#435b90; padding:0 5px;}
+.i_file{ width:100px; _width:90px; opacity:0; filter:alpha(opacity=0); position:absolute; left:240px; z-index:10; overflow:hidden;}
+.i_button1, .i_button2{ background-color:#557eda; width:98px; height:24px; color:#fff; border:1px solid #3a5aa1; position:absolute; top:2px; z-index:1;}
+.i_button1{ left:240px;}
+.i_button2{ left:355px;}
+.two_btns{ padding-left:14px;}
+.two_btns input{ width:106px; height:37px; font-size:16px;}
+.submit_btn{ background:#ff8500; margin-right:25px;}
+.cancel_btn{ background:#4c92a2;}
+
+
+/*2015-11-23*/
+/*设置-会议基本信息*/
+.meet_info_img{ margin-bottom:15px;}
+.meet_info_img label{ width:80px; line-height:30px; float:left; text-align:right; padding-right:7px;}
+.meet_image{ width:730px; float:left;}
+.meet_image_box,.meet_image_box img{ width:730px;}
+
+
+/*会议首页-图文*/
+.banner{ width:720px; height:386px; padding-top:15px;}
+.banner_body{ width:720px; height:386px; overflow:hidden; position:relative; z-index:5;}
+.banner_list{ position:absolute; top:0;}
+.one_banner{ width:720px; height:386px; float:left;}
+.one_banner a{ width:720px; height:386px; display:block;}
+.one_banner img{ width:720px; height:386px;}
+.points{ position:absolute; bottom:20px; left:310px; z-index:10px;}
+.points ul li{ background:url(../images/meeting/point.png) no-repeat; width:12px; height:11px; float:left; margin:0 2px}
+.points ul li.current_banner{ background:url(../images/meeting/point_c.png) no-repeat;}
+.meet_report{ margin-top:20px;}
+.blue_title{font-size:12px; line-height:26px; color:#338395; padding:10px 0 10px; margin-left:-10px; border-bottom:1px solid #dbdfe2;}
+.blue_title .title{font-size:16px; background:url(../images/meeting/rect.jpg) no-repeat left center; padding-left:15px; font-weight:bold;}
+.report_list{ padding-top:5px;}
+.report_ship{ margin-top:20px;}
+.meet_video{ margin-top:20px;}
+.video_ship{ width:208px; margin:35px 5px 0 27px; float:left; _display:inline;}
+.video_ship_img,.video_ship_img a,.video_ship_img a img{ width:208px; height:181px;}
+.video_ship_img a{ display:block;}
+.video_intro{ margin-top:10px;}
+.video_intro a{ color:#3e3e3e; font-size:14px;line-height:24px;}
+.fl_none{ float:none; width:auto;}
+
+
+/*显示模块*/
+.box_show{ padding-left:60px; color:#435b90;}
+.show_choice{ line-height:25px;}
+.show_choice label,.show_choice select,.show_choice .text{ float:left; margin-right:5px;}
+.show_choice select{ width:270px; height:25px; padding:0 10px;font-size:14px; color:#435b90;}
+.show_table_box{ padding-left:60px; margin-top:30px;}
+.show_table{ table-layout:fixed; text-align:left;}
+.show_table th{ background:#f7faff; color:#000;}
+.show_table tbody td{ padding:4px 0;}
+.show_table tbody td .text{ width:55px; height:25px; border:1px solid #d1d7e5; text-align: center; padding:0 5px; line-height:25px; color:#435b90;}
+.order_btn{ width:104px; height: 26px; background:#eee; color:#435b90;}
+
+
+/*面包屑导航*/
+.path{ width:1000px; margin:0 auto; font-size:14px; line-height:34px;}
+.path a{ color:#338395;}
+
+
+/*用户报名信息*/
+.sign_title{ font-size:18px; line-height:42px;}
+.sign_body{ border:1px solid #ccc; font:14px/24px "SimSun"; margin-top:30px; padding-bottom:50px;}
+.choice_info_top{ padding:30px 28px; border-bottom:1px solid #ccc;}
+.choice_info_bottom{ padding:0 28px;}
+.choice_info_box{ margin-top:25px;}
+.choice_info_box span{ float:left; width:90px;}
+.choice_right{ float:left; width:850px;}
+.choice_right label{ float:left; margin-right:35px;}
+.choice_right label input{ margin-right:5px; vertical-align:middle; margin-bottom:3px; *margin-bottom:0;}
+.choice_tip{ border:1px solid #8a8a8a; padding:0 5px; width:440px; height:80px; resize:none; overflow-y:auto;font:14px/24px "SimSun"; float:left;}
+.choice_submit_box{ margin-top:40px; margin-left:171px;}
+.grey_btn_35{ width:116px; height:35px; background:#eee; border:1px solid #939393; font-size:14px; color:#000; font-family:"SimSun";}
+
+
+
+/*20160523*/
+.img_box{ width:200px; height:120px; margin-bottom:12px;}
+.img_box img{ width:200px; height:120px; border:1px solid #ccc;}

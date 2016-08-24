@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>设置-管理员[增加]</title>
+<link href="res/css/meeting.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="head">
+    	<div class="head_body clearfix">
+        	<div class="logo"><a href=""><img src="res/images/meeting/logo.png" /></a></div>
+            <div class="login_info">
+                <a href="">王女士 个人中心</a>
+                <a href="" class="quit">退出</a>
+            </div>
+        </div>
+    </div>
+	<div class="main_top clearfix">
+		<div class="left_title">医脉通医学会议</div>		
+		<div class="center_title">某某会议</div>
+		<div class="right_btn"><input type="button" class="btn orange_btn_short" value="关闭页面" /></div>
+	</div>
+	<div class="main_body">
+		<div class="one_box">
+			<div class="main_body_title"><span>设置会议管理员</span></div>
+			<div class="main_body_content">
+				<div class="add_admin">
+					<div class="submit_box"><input type="button" class="btn add_admin_btn" /></div>
+					<div class="add_adminTable">
+						<table class="add_admin_table" cellpadding="0" cellspacing="0">
+							<tr>
+								<th width="260">管理员</th>
+								<th width="145">状态</th>
+								<th width="225">操作</th>
+							</tr>
+							<tr>
+								<td>姓名(139 3966 1027)</td>
+								<td>已禁用</td>
+								<td><a href="#">启用</a></td>
+							</tr>
+							<tr>
+								<td>姓名(139 3966 1027)</td>
+								<td>已禁用</td>
+								<td><a href="#">启用</a></td>
+							</tr>
+							<tr>
+								<td>姓名(139 3966 1027)</td>
+								<td>已禁用</td>
+								<td><a href="#">启用</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--添加联系人弹框-->
+	<div class="pop_box" id="pop_box">
+		<div class="pop_close"><input type="button" class="btn pop_close_btn" /></div>
+		<div class="pop_title">添加管理员</div>
+		<div class="pop_body">
+			<div class="pop_input clearfix">
+				<label>管理员姓名：</label>
+				<input type="text" class="text input_text" />			
+			</div>
+			<div class="pop_input clearfix">
+				<label>管理员电话：</label>
+				<input type="text" class="text input_text" />
+			</div>
+		</div>
+		<div class="pop_submit clearfix">
+			<input type="button" class="btn orange_btn_short left" value="保存" />
+			<input type="button" class="btn blue_btn_short right" value="取消" />
+		</div>
+	</div>
+	<script>
+		var popbox = document.getElementById("pop_box");
+		var pop_h = popbox.clientHeight;
+		popbox.style.marginTop = -(pop_h/2)+"px";
+	</script>
+    <div class="footer">
+    	<div class="footer_body">
+            <ul>
+                <li><a href="">关于我们</a>|</li>
+                <li><a href="">系列期刊</a>|</li>
+                <li><a href="">期刊订阅</a>|</li>
+                <li><a href="">新媒体产品</a></li>
+            </ul>
+            <p>京ICP备 07035254号   京公网安备  11010102000192号    出版物经营许可证  新出发京零字第东130025号</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+<link href="res/css/index.css" type="text/css" rel="stylesheet" />
+<script src="res/js/jquery.js"></script>
+<script src="res/js/switch_pic.js"></script>
+</head>
+
+<body>
+	<div class="head">
+    	<div class="head_body clearfix">
+        	<div class="logo"><img src="res/images/front/logo.png" /></div>
+            <div class="head_nav clearfix">
+            	<div class="nav_login clearfix">
+                	<div class="search_box clearfix">
+                    	<input type="text" class="text" value="搜索会议" onblur="if(!value){value=defaultValue;this.style.color='#338395'}" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" />
+                    	<input type="button" class="btn" />
+                    </div>
+                    <!--未登录状态-->
+                	<!--<ul class="login_ul">
+                        <li><a href="#">中华医学网</a></li>
+                        <li>|</li>
+                    	<li><a class="active" href="#">登录</a></li>
+                    </ul>-->
+                    <!--已登录状态-->
+                    <ul class="login_ul">
+                        <li><a href="#">中华医学网</a></li>
+                        <li>|</li>
+                        <li><a class="active" href="#">刘锡风  个人中心</a></li>
+                        <li>|</li>
+                        <li><a href="#">退出</a></li>
+                    </ul>                     
+                </div>
+                <div class="nav_nav clearfix">
+                	<ul>
+                    	<li><a class="a hover" href="#">会议首页</a></li>
+                        <li><a class="a" href="#">指南与巡讲</a></li>
+                        <li><a class="a" href="#">论坛会议</a></li>
+                        <li><a class="a" href="#">发布会议</a></li>
+                        <li><a class="a" href="#">我的会议</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>	
+    <div class="main">
+    	<div class="info_page clearfix">
+        	<div class="page_l">
+            	<div class="page_nav">
+                	<div class="page_nav_title">
+                    	<ul class="clearfix">
+                        	<li><a class="hover" href="#">心血管</a></li>
+                            <li><a href="#">内分泌</a></li>
+                            <li><a href="#">血液</a></li>
+                            <li><a href="#">泌外</a></li>
+                             <li><input type="button" class="btn nav_more" /></li>
+                            <li><input type="button" class="btn nav_close" /></li>
+                        </ul>
+                    </div>
+                    <div class="page_nav_body clearfix" style="display:block;">
+                    	<div class="slide">
+                        	<h4>全部学科频道</h4>
+                        </div>
+                        <div class="nav_info">
+                        	<ul class="clearfix">
+                            	<li><a class="yellow" href="#">心血管</a></li>
+                                <li><a class="yellow" href="#">内分泌</a></li>
+                                <li><a href="#">呼吸</a></li>
+                                <li><a href="#">消化</a></li>
+                                <li><a href="#">神内</a></li>
+                                <li><a href="#">肿瘤</a></li>
+                                <li><a href="#">妇产</a></li>
+                                <li><a href="#">儿科</a></li>
+                                <li><a href="#">眼科</a></li>
+                                <li><a href="#">耳鼻喉</a></li>
+                                <li><a href="#">风湿</a></li>
+                                <li><a href="#">肾内</a></li>
+                                <li><a class="yellow" href="#">血液</a></li>
+                                <li><a href="#">心胸</a></li>
+                                <li><a href="#">烧伤整形</a></li>
+                                <li><a href="#">全科医学</a></li>
+                                <li><a href="#">预防医学</a></li>
+                                <li><a href="#">皮肤性病</a></li>
+                                <li><a href="#">检验</a></li>
+                                <li><a href="#">影像</a></li>
+                                <li><a href="#">普外</a></li>
+                                <li><a href="#">危重症</a></li>
+                                <li><a class="yellow" href="#">泌外</a></li>
+                                <li><a href="#">人文</a></li>
+                                <li><a href="#">口腔</a></li>
+                                <li><a href="#">骨科</a></li>
+                                <li><a href="#">神外</a></li>
+                                <li><a href="#">病理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner_body">
+                        <div class="banner_list">
+                            <div class="one_banner">
+                            	<a href=""><img src="res/test_images/1.jpg" /></a>
+                                <p>第十届华东六省一市神经外科学术会议</p>
+                            </div>
+                            <div class="one_banner">
+                            	<a href=""><img src="res/test_images/1.jpg" /></a>
+                                <p>第十届华东六省一市神经外科学术会议</p>
+                            </div>
+                            <div class="one_banner">
+                            	<a href=""><img src="res/test_images/1.jpg" /></a>
+                                <p>第十届华东六省一市神经外科学术会议</p>
+                            </div>
+                            <div class="one_banner">
+                            	<a href=""><img src="res/test_images/1.jpg" /></a>
+                                <p>第十届华东六省一市神经外科学术会议</p>
+                            </div>
+                        </div>
+                        <div class="points">
+                            <ul>
+                                <li class="current_banner"></li>
+                                <li class=""></li>
+                                <li class=""></li>
+                                <li class=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                switchBanner.init(653,4,'banner','banner_list','one_banner','points','current_banner');
+                </script>
+            </div>
+        	<div class="page_r">
+            	<div class="txt_box">
+                	<div class="txt_scroll" id="txt_scroll">
+                        <div class="txt_list">
+                            <ul id="txt1">
+                                <li><a href="">这里写读者关注会议的及时信息（滚动）</a></li>
+                                <li><a href="">这里写读者关注会议的及时信息（滚动）</a></li>
+                                <li><a href="">这里写读者关注会议的及时信息（滚动）</a></li>
+                                <li><a href="">这里写读者关注会议的及时信息（滚动）</a></li>
+                            </ul>
+                            <ul id="txt2"></ul>
+                        </div>
+                        <script type="text/javascript">
+                            var txt_scroll = document.getElementById("txt_scroll");
+                            var txt1 = document.getElementById("txt1");
+                            var txt2 = document.getElementById("txt2");
+                            txt2.innerHTML=document.getElementById("txt1").innerHTML;
+                            function Marquee(){
+                                if(txt_scroll.scrollLeft-txt2.offsetWidth>=0){
+                                    txt_scroll.scrollLeft-=txt1.offsetWidth;
+                                }
+                                else{
+                                    txt_scroll.scrollLeft++;
+                                }
+                            }
+                            var myvar=setInterval(Marquee,30);
+                            txt_scroll.onmouseout=function (){myvar=setInterval(Marquee,30);}
+                            txt_scroll.onmouseover=function(){clearInterval(myvar);}
+                        </script>
+                    </div>
+                </div>
+                <div class="calendar_box">
+                	<div class="calendar">
+                    	<div class="calendar_top">
+                        	<input type="button" class="btn left" />
+                            <p>2016年3月</p>
+                            <input type="button" class="btn right" />
+                        </div>
+                        <div class="calendar_btm">
+                        	<table>
+                            	<tr class="tit">
+                                	<th>日</th>
+                                    <th>一</th>
+                                    <th>二</th>
+                                    <th>三</th>
+                                    <th>四</th>
+                                    <th>五</th>
+                                    <th>六</th>
+                                </tr>
+                                <tr>
+                                	<td><p></p></td>
+                                    <td><p></p></td>
+                                    <td><p>1</p></td>
+                                    <td><p>2</p></td>
+                                    <td>
+                                    	<div class="meet_wrap">
+                                            <p>3</p>
+                                            <div class="meet_info" style="display:none;">
+                                                <div class="f_top"></div>
+                                                <div class="f_center">
+                                                    <ul>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li class="bor_no"><a href="">外科学术会议神经外科学术会议</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_btm"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><p>4</p></td>
+                                    <td><p>5</p></td>
+                                </tr>
+                                <tr>
+                                	<td><p>6</p></td>
+                                    <td><p>7</p></td>
+                                    <td><p>8</p></td>
+                                    <td><p>9</p></td>
+                                    <td>
+                                    	<div class="meet_wrap">
+                                            <p>10</p>
+                                            <div class="meet_info" style="display:none;">
+                                                <div class="f_top"></div>
+                                                <div class="f_center">
+                                                    <ul>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li class="bor_no"><a href="">外科学术会议神经外科学术会议</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_btm"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                    	<div class="meet_wrap">
+                                            <p>11</p>
+                                            <div class="meet_info" style="display:none;">
+                                                <div class="f_top"></div>
+                                                <div class="f_center">
+                                                    <ul>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li class="bor_no"><a href="">外科学术会议神经外科学术会议</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_btm"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><p>12</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>13</p></td>
+                                    <td><p>14</p></td>
+                                    <td><p>15</p></td>
+                                    <td><p>16</p></td>
+                                    <td><p>17</p></td>
+                                    <td>
+                                    	<div class="meet_wrap">
+                                            <p>18</p>
+                                            <div class="meet_info" style="display:none;">
+                                                <div class="f_top"></div>
+                                                <div class="f_center">
+                                                    <ul>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li class="bor_no"><a href="">外科学术会议神经外科学术会议</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_btm"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                    	<div class="meet_wrap">
+                                            <p>19</p>
+                                            <div class="meet_info" style="display:none;">
+                                                <div class="f_top"></div>
+                                                <div class="f_center">
+                                                    <ul>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li class="bor_no"><a href="">外科学术会议神经外科学术会议</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_btm"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>  
+                                    <td><p>20</p></td>
+                                    <td><p>21</p></td>
+                                    <td><p>22</p></td>
+                                    <td><p>23</p></td>
+                                    <td>
+                                    	<div class="meet_wrap">
+                                            <p>24</p>
+                                            <div class="meet_info" style="display:none;">
+                                                <div class="f_top"></div>
+                                                <div class="f_center">
+                                                    <ul>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li class="bor_no"><a href="">外科学术会议神经外科学术会议</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_btm"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                    	<div class="meet_wrap">
+                                            <p>25</p>
+                                            <div class="meet_info" style="display:none;">
+                                                <div class="f_top"></div>
+                                                <div class="f_center">
+                                                    <ul>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li class="bor_no"><a href="">外科学术会议神经外科学术会议</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_btm"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><p>26</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>27</p></td>
+                                    <td><p>28</p></td>
+                                    <td><p>29</p></td>
+                                    <td>
+                                    	<div class="meet_wrap">
+                                            <p>30</p>
+                                            <div class="meet_info" style="display:none;">
+                                                <div class="f_top"></div>
+                                                <div class="f_center">
+                                                    <ul>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li><a href="">外科学术会议神经外科学术会议</a></li>
+                                                        <li class="bor_no"><a href="">外科学术会议神经外科学术会议</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="f_btm"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><p>31</p></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <script>
+								$(".meet_wrap").hover(function(){
+									$(this).toggleClass("wrap_index");
+									$(this).find(".meet_info").toggle();
+								});
+                            </script>
+                        </div>
+                    </div>
+                    <div class="pub_btn">
+                    	<input type="button" class="btn" value="发布会议" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="infomation">
+        	<div class="title clearfix">
+            	<h4 class="icon icon1">推荐会议</h4>
+                <a href="#">更多</a>
+            </div>
+            <div class="info_list clearfix">
+            	<div class="info_ship" style="margin-left:0px">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/4.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/5.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/6.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/7.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="infomation">
+        	<div class="title clearfix">
+            	<h4 class="icon icon2">我的会议</h4>
+                <a href="#">更多</a>
+            </div>
+            <div class="info_list clearfix">
+            	<div class="info_ship" style="margin-left:0px">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/4.jpg" /><span class="collected"></span></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/5.jpg" /><span class="joined"></span></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/6.jpg" /><span class="collected"></span></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/7.jpg" /><span class="joined"></span></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pic_box">
+        	<a href="#"><img src="res/images/front/pic.jpg" /></a>
+        </div>
+        <div class="infomation">
+        	<div class="title clearfix">
+            	<h4 class="icon icon3">指南与巡讲</h4>
+                <a href="#">更多</a>
+            </div>
+            <div class="info_list clearfix">
+            	<div class="info_ship" style="margin-left:0px">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/4.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/5.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/6.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/7.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="infomation">
+        	<div class="title clearfix">
+            	<h4 class="icon icon4">论坛会议</h4>
+                <a href="#">更多</a>
+            </div>
+            <div class="info_list clearfix">
+            	<div class="info_ship" style="margin-left:0px">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/4.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/5.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/6.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                	<div class="info_img">
+                    	<a href="#"><img src="res/test_images/7.jpg" /></a>
+                    </div>
+                    <div class="info_intro">
+                    	<h4><a href="#">第十届华东六省一市神经外科学术会议神经外科学术会议</a></h4>
+                        <p>
+                        	<span class="p_address">湖北 武汉</span>
+                            <span class="p_time">2015/4/1</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+		<div class="foot_body">
+			<div class="footer clearfix">
+				<div class="footer_l">
+					<img src="res/images/front/footer_logo.png" />
+				</div>
+				<div class="footer_c clearfix">
+					<div class="footer_list">
+						<div class="list_title"><span>关于我们</span></div>
+						<div class="list_body"> 
+							<ul class="list_info">
+								<li><a href="#">中华医学会杂志社</a></li>
+								<li><a href="#">系列杂志一览表</a></li>
+								<li><a href="#">招聘信息</a></li>
+								<li><a href="#">版权声明</a></li>
+                                <li><a href="#">联系我们</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_list">
+						<div class="list_title"><span>加盟合作</span></div>
+						<div class="list_body"> 
+							<ul class="list_info">
+								<li><a href="#">期刊加盟</a></li>
+								<li><a href="#">代理销售</a></li>
+								<li><a href="#">广告服务</a></li>
+								<li><a href="#">合作单位</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_list">
+						<div class="list_title"><span>企业支持</span></div>
+						<div class="list_body"> 
+							<ul class="list_info">
+								<li><a href="#">期刊订阅</a></li>
+								<li><a href="#">学术支持</a></li>
+								<li><a href="#">会议合作</a></li>
+								<li><a href="#">版权合作</a></li>
+								<li><a href="#">新媒体广告合作</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_list">
+						<div class="list_title"><span>新媒体产品</span></div>
+						<div class="list_body"> 
+							<ul class="list_info">
+								<li><a href="#">中华医学会系列期刊</a></li>
+								<li><a href="#">医学指南针</a></li>
+								<li><a href="#">最佳临床实践(BP)中文版</a></li>
+								<li><a href="#">微信公众号方阵</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--<div class="footer_r">
+					<div class="list_title"><span>医谷APP</span></div>
+					<div class="ewm_box">
+						<img src="res/images/ewm.jpg" />
+					</div>
+				</div>-->
+			</div>
+			<div class="footer_b">
+				<p>京ICP备<span>07035254号</span>京公网安备<span>11010102000192号</span>出版物经营许可证<span>新出发京零字第东130025号</span></p>
+			</div>
+		</div>
+    </div>    
+</body>
+</html>

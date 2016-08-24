@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>设置-会议基本信息</title>
+<link href="res/css/meeting.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="head">
+    	<div class="head_body clearfix">
+        	<div class="logo"><a href=""><img src="res/images/meeting/logo.png" /></a></div>
+            <div class="login_info">
+                <a href="">王女士 个人中心</a>
+                <a href="" class="quit">退出</a>
+            </div>
+        </div>
+    </div>
+	<div class="main_top clearfix">
+		<div class="left_title">医脉通医学会议平台</div>		
+		<div class="center_title">某某会议</div>
+		<div class="right_btn"><input type="button" class="btn orange_btn_short" value="关闭页面" /></div>
+	</div>
+	<div class="main_body">
+		<div class="one_box">
+			<div class="main_body_title"><span>会议基本信息</span></div>
+			<div class="main_body_content">
+				<div class="publish_body">
+					<div class="one_search">
+						<label><span>*</span>会议名称：</label>
+						<input type="text" class="long_input" />
+						<a href="" class="check">查重</a>
+					</div>
+					<div class="one_search">
+						<label><span>*</span>会议时间：</label>
+						<input type="text" class="time_input" />
+						<span class="time_line"></span>
+						<input type="text" class="time_input" />
+					</div>
+					<div class="one_search">
+						<label><span>*</span>会议地点：</label>
+						<select class="select1">
+							<option>国内</option>
+						</select>
+						<select class="select1">
+							<option>省</option>
+						</select>
+						<select class="select1">
+							<option>市</option>
+						</select>
+					</div>
+					<div class="one_search">
+						<label><span>*</span>详细地址：</label>
+						<input type="text" class="long_input" />
+					</div>
+					<div class="one_search">
+						<label>学分性质：</label>
+						<div class="credit_character">
+							<ul class="clearfix">
+								<li><input type="checkbox" class="check_box" /><span>国家级l类</span><input type="text" class="short_input" /><span>分</span>；</li>
+								<li><input type="checkbox" class="check_box" /><span>省级l类</span><input type="text" class="short_input" /><span>分</span>；</li>
+								<li><input type="checkbox" class="check_box" /><span>省级ll类</span><input type="text" class="short_input" /><span>分</span>；</li>
+								<li><input type="checkbox" class="check_box" /><span>市级l类</span><input type="text" class="short_input" /><span>分</span>；</li>
+								<li><input type="checkbox" class="check_box" /><span>市级ll类</span><input type="text" class="short_input" /><span>分</span>；</li>
+							</ul>
+						</div>
+					</div>
+					<div class="one_search">
+						<label><span>*</span>会议分类：</label>
+						<select class="select1">
+							<option>心内科</option>
+						</select>
+						<a href="" class="check">增加</a>
+					</div>
+					<div class="class_list">
+						<ul class="clearfix">
+							<li><label>消化科</label><a href="" class="delete">X</a></li>
+							<li><label>风湿免疫科</label><a href="" class="delete">X</a></li>
+						</ul>
+					</div>
+                    <div class="one_search">
+                        <label><span>*</span>会议类型：</label>
+                        <select class="select1">
+                            <option>请选择</option>
+                        </select>
+                        <a href="" class="check">增加</a>
+            		</div>
+                    <div class="meet_info_img clearfix">
+						<label>缩略图：</label>
+						<div class="meet_image">
+                        	<div class="img_box" style="display:block"><img src="res/test_images/1.jpg" /></div>
+							<div class="file-box">
+								<form>
+									<input type='text' name='textfield' id='textfield' class='txt' style="_display:none;" />
+									<input type='button' class="btn grey_gradient_btn mal_25" value="浏览" style="_display:none;"  />
+									<input type="file" name="fileField" class="file file_long" size="28" onchange="document.getElementsByName('textfield')[0].value=this.value" />
+									<input type="submit" name="submit" class="btn blue_gradient_btn mal_25" value="上传" style="_margin-left:322px;_height:26px"  />
+								</form>
+							</div>
+						</div>
+					</div>
+            		
+					<div class="meet_info_img clearfix">
+						<label>会议头图：</label>
+						<div class="meet_image">
+							<div class="meet_image_box"><img src="res/test_images/meet_img_test.jpg" /></div>
+							<div class="file-box">
+								<form>
+									<input type='text' name='textfield' id='textfield' class='txt' style="_display:none;" />
+									<input type='button' class="btn grey_gradient_btn mal_25" value="浏览" style="_display:none;"  />
+									<input type="file" name="fileField" class="file file_long" size="28" onchange="document.getElementsByName('textfield')[1].value=this.value" />
+									<input type="submit" name="submit" class="btn blue_gradient_btn mal_25" value="上传" style="_margin-left:322px;_height:26px"  />
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="two_btns">
+						<input class="btn submit_btn" type="button" value="提交" />
+						<input class="btn cancel_btn" type="button" value="取消" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="footer">
+    	<div class="footer_body">
+            <ul>
+                <li><a href="">关于我们</a>|</li>
+                <li><a href="">系列期刊</a>|</li>
+                <li><a href="">期刊订阅</a>|</li>
+                <li><a href="">新媒体产品</a></li>
+            </ul>
+            <p>京ICP备 07035254号   京公网安备  11010102000192号    出版物经营许可证  新出发京零字第东130025号</p>
+        </div>
+    </div>
+</body>
+</html>

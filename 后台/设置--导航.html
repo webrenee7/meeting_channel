@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>设置--导航</title>
+<link href="res/css/meeting.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="head">
+    	<div class="head_body clearfix">
+        	<div class="logo"><a href=""><img src="res/images/meeting/logo.png" /></a></div>
+            <div class="login_info">
+                <a href="">王女士 个人中心</a>
+                <a href="" class="quit">退出</a>
+            </div>
+        </div>
+    </div>
+	<div class="main_top clearfix">
+		<div class="left_title">医脉通医学会议</div>		
+		<div class="center_title">某某会议</div>
+		<div class="right_btn"><input type="button" class="btn orange_btn_short" value="关闭页面" /></div>
+	</div>
+	<div class="main_body">
+		<div class="one_box">
+			<div class="nav_path">
+				<a href="#">导航栏</a>
+				>栏目设置
+			</div>
+			<div class="main_body_content">
+				<div class="nav_set">
+					<table class="nav_set_table" cellpadding="0" cellspacing="0">
+						<tr>
+							<th width="90">栏目序号</th>
+							<th width="195">栏目名称</th>
+							<th width="160">栏目状态</th>
+							<th width="140">&nbsp;</th>
+							<th width="415">&nbsp;</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>会议介绍</td>
+							<td>显示</td>
+							<td><a href="javascript:void(0)">编辑</a></td>
+							<td><a href="#">去查看</a></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>个人报名</td>
+							<td>显示</td>
+							<td>&nbsp;</td>
+							<td><a href="#">去查看</a></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>集体报名</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td><a href="#">去查看</a></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>参会住宿</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>大会征文</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>文献集</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>会议日程</td>
+							<td>不显示</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>大会组织</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>参会专家</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>精彩PPT</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>会场花絮</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>文章列表页T</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--编辑弹框-->
+	<div class="pop_box" id="pop_box">
+		<div class="pop_close"><input type="button" class="btn pop_close_btn" /></div>
+		<div class="pop_title">项目名称编辑</div>
+		<div class="pop_body">
+			<div class="pop_input clearfix">
+				<label>当前名称：</label>
+				<span class="left mal_10">****</span>				
+			</div>
+			<div class="pop_input clearfix">
+				<label>替换名称：</label>
+				<input type="text" class="text input_text" />
+			</div>
+		</div>
+		<div class="pop_submit clearfix">
+			<input type="button" class="btn orange_btn_short left" value="保存" />
+			<input type="button" class="btn blue_btn_short right" value="取消" />
+		</div>
+	</div>
+	<script>
+		var popbox = document.getElementById("pop_box");
+		var pop_h = popbox.clientHeight;
+		popbox.style.marginTop = -(pop_h/2)+"px";
+	</script>
+    <div class="footer">
+    	<div class="footer_body">
+            <ul>
+                <li><a href="">关于我们</a>|</li>
+                <li><a href="">系列期刊</a>|</li>
+                <li><a href="">期刊订阅</a>|</li>
+                <li><a href="">新媒体产品</a></li>
+            </ul>
+            <p>京ICP备 07035254号   京公网安备  11010102000192号    出版物经营许可证  新出发京零字第东130025号</p>
+        </div>
+    </div>
+</body>
+</html>

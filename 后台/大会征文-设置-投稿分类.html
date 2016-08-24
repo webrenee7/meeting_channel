@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>大会征文-设置-投稿分类</title>
+<link href="res/css/meeting.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="head">
+    	<div class="head_body clearfix">
+        	<div class="logo"><a href=""><img src="res/images/meeting/logo.png" /></a></div>
+            <div class="login_info">
+                <a href="">王女士 个人中心</a>
+                <a href="" class="quit">退出</a>
+            </div>
+        </div>
+    </div>
+	<div class="main_top clearfix">
+		<div class="left_title">医脉通医学会议</div>		
+		<div class="center_title">某某会议</div>
+		<div class="right_btn"><input type="button" class="btn orange_btn_short" value="关闭页面" /></div>
+	</div>
+	<div class="main_body">
+		<div class="one_box">
+			<div class="main_body_title clearfix">
+				<span class="left">论文分类</span>
+				<input type="button" class="btn orange_btn_short right" value="增加" />
+			</div>			
+			<div class="main_body_content">
+				<table class="text_type" cellpadding="0" cellspacing="0">
+					<tr>
+						<th width="95">序号</th>
+						<th width="320">分类名称</th>
+						<th width="180">状态</th>
+						<th width="405">在线操作</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>骨科</td>
+						<td>已启用</td>
+						<td><a href="#">禁用</a><a class="mal_25" href="#">编辑</a></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>妇科</td>
+						<td>已启用</td>
+						<td><a href="#">禁用</a><a class="mal_25" href="#">编辑</a></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>妇科</td>
+						<td>已启用</td>
+						<td><a href="#">禁用</a><a class="mal_25" href="#">编辑</a></td>
+					</tr>
+				</table>				
+			</div>
+		</div>
+	</div>
+	<!--点击增加按钮弹框-->
+	<div class="shadow"></div>
+	<div class="pop_box" id="pop_box">
+		<div class="pop_close"><input type="button" class="btn pop_close_btn" /></div>
+		<div class="pop_title">增加</div>
+		<div class="pop_body">
+			<div class="pop_input clearfix">
+				<label>用户姓名：</label>
+				<input type="text" class="text input_text" />
+			</div>
+			<div class="pop_input clearfix">
+				<label>所在科室：</label>
+				<select class="select">
+					<option>肿瘤科</option>
+					<option>骨科</option>
+				</select>
+			</div>
+		</div>
+		<div class="pop_submit clearfix">
+			<input type="button" class="btn orange_btn_short left" value="保存" />
+			<input type="button" class="btn blue_btn_short right" value="取消" />
+		</div>
+	</div>
+	
+	<script>
+		window.onload=function ()
+		{
+			move();
+		}
+		
+		window.onscroll = function(){
+			move();
+		}
+		function move(){
+			var oDiv=document.getElementById('pop_box');
+			var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+			
+			//oDiv.style.top=scrollTop+(document.documentElement.clientHeight-oDiv.offsetHeight)/2+'px';
+			var t=scrollTop+(document.documentElement.clientHeight-oDiv.offsetHeight)/2;
+			startMove(parseInt(t));
+		}
+		var timer=null;
+		
+		function startMove(iTarget)
+		{
+			var oDiv=document.getElementById('pop_box');
+			
+			clearInterval(timer);
+			timer=setInterval(function (){
+				var iSpeed=(iTarget-oDiv.offsetTop)/8;
+				iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+				
+				if(oDiv.offsetTop==iTarget)
+				{
+					clearInterval(timer);
+				}
+				else
+				{
+					oDiv.style.top=oDiv.offsetTop+iSpeed+'px';
+				}
+				
+		//		txt1.value=oDiv.offsetTop+',目标：'+iTarget;
+			}, 30);
+		}
+	</script> 
+    <div class="footer">
+    	<div class="footer_body">
+            <ul>
+                <li><a href="">关于我们</a>|</li>
+                <li><a href="">系列期刊</a>|</li>
+                <li><a href="">期刊订阅</a>|</li>
+                <li><a href="">新媒体产品</a></li>
+            </ul>
+            <p>京ICP备 07035254号   京公网安备  11010102000192号    出版物经营许可证  新出发京零字第东130025号</p>
+        </div>
+    </div>
+</body>
+</html>
